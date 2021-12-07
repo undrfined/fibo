@@ -2,6 +2,7 @@ import React, {FC, useCallback, useEffect, useRef} from "react";
 
 type OwnProps = {
     label?: string;
+    postfix?: string
 };
 
 const Slider: FC<OwnProps & React.HTMLAttributes<HTMLInputElement>> = (params) => {
@@ -23,7 +24,7 @@ const Slider: FC<OwnProps & React.HTMLAttributes<HTMLInputElement>> = (params) =
     useEffect(updateValues, [updateValues])
 
     return <div className="slider-input">
-        <span className="label">{label}</span>
+        <span className="label">{label} <div className="perc">{sliderRef.current?.value}{params.postfix || '%'}</div></span>
         <input {...otherParams} ref={sliderRef} onInput={updateValues} type="range"/>
     </div>
 }

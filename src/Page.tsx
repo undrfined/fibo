@@ -1,4 +1,4 @@
-import {FC} from "react";
+import React, {FC} from "react";
 import {useHistory} from "react-router-dom";
 import back from "./Assets/back.svg";
 import info from "./Assets/info.svg";
@@ -10,7 +10,7 @@ type OwnProps = {
     hasBackButton?: boolean;
     learnPage?: string;
     navItems?: NavItem[];
-    children?: JSX.Element | JSX.Element[];
+    children?: React.ReactNode;
     isScrollable?: boolean;
 };
 

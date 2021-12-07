@@ -572,3 +572,44 @@ canvas {
   margin: 0 5px;
   border-radius: 5px;
 }
+
+.matrix-input {
+  width: 64px;
+  height: 64px;
+}
+
+.transformation {
+  display: flex;
+  align-items: center;
+
+}
+
+.transformation .data {
+  margin-left: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.transformation .data .title {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.transformation .data .info {
+  color: #9DA4B8;
+}
+
+.transformation .icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.transformation .buttons {
+  margin-left: auto;
+  display: flex;
+}

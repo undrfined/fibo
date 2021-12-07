@@ -308,8 +308,8 @@ const ColorModelsPage: FC<OwnProps> = ({
                     dodraw()
                 }}>cmyk</button>
             </div>
-            <Slider label="Saturation" onChange={handleSaturationChange}/>
-            <Slider label="Brightness" onChange={handleBrightnessChange}/>
+            <Slider label="Saturation (Blue)" onChange={handleSaturationChange}/>
+            <Slider label="Brightness (Blue)" onChange={handleBrightnessChange}/>
         </Popdown>
     </Page>
 }
